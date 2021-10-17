@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>
+            SchoogLink TEST Assessment by KUNAL GOYAL
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="Schooglink.css"> 
+    </head>
+    <body>
+ 
+        <div class="container">
+            <div class="row mt-5 ml-5">
+                <div class="col-lg-1  ml-5" style="border-radius: 10px;">
+                    <div class="col-lg-6 mt-5 d-flex justify-content-center align-items-center" id="signindiv">
+                        <a href="Schooglink test assessment.html"class="payment card-link">
+                            <h5 class=""><i class="fas fa-sign-in-alt"></h5></i>
+                            <p  style="font-size: 12px;">Signin</p>
+                        </a>
+                    </div>
+                <div class="col-lg-6 mt-5 d-flex justify-content-center align-items-center" id="paymentdiv">
+                    <a href="Schooglink test assessment2.html"class="payment card-link">
+                        <h5 class=" ml-2"><i class="fas fa-money-bill-alt"></h5></i>
+                        <p  style="font-size: 12px;">Payment</p>
+                    </a>
+                </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-content-center flex-column" style="background-color: #0450d5;border-radius: 10px;">
+                    <img src="img.svg">
+                </div>
+                <div class="col-lg-3 ml-3 mt-3 d-flex justify-content-center align-content-center flex-column" style="border-radius: 10px;">
+                  <form name="form1"  onsubmit=" return detailscheck()">
+                    <p id="cardname" class="text-muted" style="font-weight: bold;">Name on Card:</p>
+                    <hr class="bg-warning" id="myhr5">
+                    <p class="text-danger" id="namewrong"></p>
+                    <input id="cardnamein" class="form-control" placeholder="Enter Card-holder Name" type="text" required maxlength="16" minlength="4">
+                    <p id="cardno" class="text-muted mt-2" style="font-weight: bold;">Card Number:</p>
+                    <p class="text-danger" id="cardnowrong"></p>
+                    <hr class="bg-warning" id="myhr6">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <input type="text" id="cardnoin" required placeholder="Enter Card Number" name="text1" class="form-control" maxlength="16"/>
+                        </div>
+                        <div class="col-sm-2"> 
+                            <img src="white.svg" class="mt-1" height="30px" width="30px" id="imgchange">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-2" type="click" onclick="cardnumber(document.form1.text1)">Check Card</button>
+                    <p id="expdate" class="text-muted mt-2" style="font-weight: bold;">Expiry Date:</p>
+                    <hr class="bg-warning" id="myhr7">
+                    <input id="expdatein" class="form-control" placeholder="Enter Expiry Date" type="date" required>
+                    <p id="cvv" class="text-muted mt-2" style="font-weight: bold;">CVV:</p>
+                
+                    <hr class="bg-warning" id="myhr8">
+                    <p class="text-danger" id="cvvwrong"></p>
+                    <input id="cvvin" class="form-control" placeholder="Enter CVV" type="text" maxlength="3" minlength="3" required><br>
+                    <button id="btn1" class="btn btn-primary mt-2" type="submit" style="width: 100%">Submit</button>
+                </form>
+                    <br>
+                   
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <script>
+        function cardnumber(input)
+        {
+            var cardno = /^(?:5[1-5][0-9]{14})$/;
+            var cardno2 =/^4[0-9]{12}(?:[0-9]{3})?$/
+            var cardnoo=document.getElementById("cardnoin");
+            if(isNaN(cardnoo))
+               {
+                document.getElementById("cardnowrong").innerHTML="Card Number must be Numeric only";
+                document.getElementById("cardnoin").style.border="1px";
+                       document.getElementById("cardnoin").style.borderColor="red";
+                       document.getElementById("cardnoin").style.borderStyle="solid";  
+               } 
+        
+        
+            if(input.value.match(cardno))
+        {
+                document.getElementById("imgchange").src="mastercard.svg";
+                document.getElementById("cardnowrong").innerHTML="";
+                document.getElementById("cardnoin").style.border="1px";
+                       document.getElementById("cardnoin").style.borderColor="grey";
+                       document.getElementById("cardnoin").style.borderStyle="solid";  
+                
+        }
+      else if(input.value.match(cardno2))
+        {
+            document.getElementById("imgchange").src="visa.svg";
+            document.getElementById("cardnowrong").innerHTML="";
+            document.getElementById("cardnoin").style.border="1px";
+                       document.getElementById("cardnoin").style.borderColor="grey";
+                       document.getElementById("cardnoin").style.borderStyle="solid";  
+        }
+    }
+
+    
+
+     
+        function detailscheck()
+        {
+            var cardnam = document.getElementById("cardnamein");
+            var cvvno= document.getElementById("cvvin");
+                if(!isNaN(cardnam.value))
+                   {
+                       document.getElementById("namewrong").innerHTML="Card Name must contain characters only";
+                       document.getElementById("cardnamein").style.border="1px";
+                       document.getElementById("cardnamein").style.borderColor="red";
+                       document.getElementById("cardnamein").style.borderStyle="solid";  
+                    
+                   }
+                else if(isNaN(cardnam))
+                {
+                       document.getElementById("namewrong").innerHTML="";
+                       document.getElementById("cardnamein").style.border="1px";
+                       document.getElementById("cardnamein").style.borderColor="grey";
+                       document.getElementById("cardnamein").style.borderStyle="solid";  
+                
+                }
+                
+                if(isNaN(cvvno.value))
+                {
+                    document.getElementById("cvvwrong").innerHTML="CVV Number must be Numeric only";
+                    document.getElementById("cvvin").style.border="1px";
+                       document.getElementById("cvvin").style.borderColor="red";
+                       document.getElementById("cvvin").style.borderStyle="solid";  
+                       return false;
+                }
+                }
+
+            
+
+    </script>
+
+</body>
+  
+    </html>

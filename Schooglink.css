@@ -1,0 +1,250 @@
+#myhr{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -15px;
+}
+#myhr2{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -10px;
+}#myhr3{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -10px;
+
+}
+#myhr4{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -10px;
+    border:0px;
+
+}
+#py:hover~ #myhr4{
+    width: 200px;
+    transition: 0.5s ease;
+}
+#py:not(hover) ~ #myhr4{
+    width: 0px; 
+    transition: 0.5s ease;
+}
+#user:hover~ #myhr{
+        width: 120px;
+        transition: 0.5s ease;
+}
+#user:not(hover)~ #myhr{
+    width: 00px;
+    transition: 0.5s ease;
+}
+#email:hover~ #myhr2{
+    width: 120px;
+    transition: 0.5s ease;
+}
+#email:not(hover)~ #myhr2{
+width: 00px;
+transition: 0.5s ease;
+}
+#pass:hover~ #myhr3{
+    width: 120px;
+    transition: 0.5s ease;
+}
+#pass:not(hover)~ #myhr3{
+width: 00px;
+transition: 0.5s ease;
+}
+
+#fb:hover{
+    font-size: 22px;
+    transition: 0.2s ease;
+}
+#fb:not(hover){
+    font-size: 17px;
+    transition: 0.2s ease;
+}
+#go:hover{
+    font-size: 22px;
+    transition: 0.2s ease;
+}
+#go:not(hover){
+    font-size: 17px;
+    transition: 0.2s ease;
+}
+#tw:hover{
+    font-size: 22px;
+    transition: 0.2s ease;
+}
+#tw:not(hover){
+    font-size: 17px;
+    transition: 0.2s ease;
+}
+
+.signin:hover{
+    color:#0450d5;
+    transition: 0.2s ease;
+
+}
+.signin:not(hover){
+    color:#8a8a8a;
+    transition: 0.2s ease;
+}
+.payment:hover{
+    color:#0450d5;
+    transition: 0.2s ease;
+
+}
+.payment:not(hover){
+    color:#8a8a8a;
+    transition: 0.2s ease;
+}
+.payment{
+    position: relative;
+}
+
+#myhr5{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -18px;
+    border:0px;
+
+}
+#myhr6{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -18px;
+    border:0px;
+
+}
+#myhr7{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -18px;
+    border:0px;
+
+}
+
+#myhr8{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -18px;
+    border:0px;
+
+}
+#cardname:hover ~ #myhr5{
+    width: 200px;
+    transition: 0.5s ease;
+}
+#cardname:not(hover) ~ #myhr5{
+    width: 0px; 
+    transition: 0.5s ease;
+}
+#cardno:hover ~ #myhr6{
+    width: 200px;
+    transition: 0.5s ease;
+}
+#cardno:not(hover) ~ #myhr6{
+    width: 0px; 
+    transition: 0.5s ease;
+}
+#expdate:hover ~ #myhr7{
+    width: 200px;
+    transition: 0.5s ease;
+}
+#expdate:not(hover) ~ #myhr7{
+    width: 0px; 
+    transition: 0.5s ease;
+}
+#cvv:hover ~ #myhr8{
+    width: 200px;
+    transition: 0.5s ease;
+}
+#cvv:not(hover) ~ #myhr8{
+    width: 0px; 
+    transition: 0.5s ease;
+}
+
+
+#myhr9{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -18px;
+    border:0px;
+
+}
+
+#myhr10{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -18px;
+    border:0px;
+
+}
+
+#paypalid:hover ~ #myhr9{
+    width: 200px;
+    transition: 0.5s ease;
+}
+#paypalid:not(hover) ~ #myhr9{
+    width: 0px; 
+    transition: 0.5s ease;
+}
+#paypalpass:hover ~ #myhr10{
+    width: 200px;
+    transition: 0.5s ease;
+}
+#paypalpass:not(hover) ~ #myhr10{
+    width: 0px; 
+    transition: 0.5s ease;
+}
+
+#myhr11{
+    width: 0px;
+    margin-left:0px;
+    height: 02px;
+    position: relative;
+    margin-top: -18px;
+    border:0px;
+
+}
+#upiidin{
+    border: 1px;
+    border-color: #c9c9c9;
+    border-style: solid;
+}
+
+#upiid:hover ~ #myhr11{
+    width: 140px;
+    transition: 0.5s ease;
+}
+#upiid:not(hover) ~ #myhr11{
+    width: 0px; 
+    transition: 0.5s ease;
+}
+
+
+
+#cardnamein{
+    border: 1px;
+    border-color: #c4c4c4;
+    border-style: solid;
+}
+

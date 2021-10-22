@@ -62,27 +62,27 @@ transition: 0.5s ease;
 }
 
 #fb:hover{
-    font-size: 22px;
+    font-size: 26px;
     transition: 0.2s ease;
 }
 #fb:not(hover){
-    font-size: 17px;
+    font-size: 22px;
     transition: 0.2s ease;
 }
 #go:hover{
-    font-size: 22px;
+    font-size: 26px;
     transition: 0.2s ease;
 }
 #go:not(hover){
-    font-size: 17px;
-    transition: 0.2s ease;
-}
-#tw:hover{
     font-size: 22px;
     transition: 0.2s ease;
 }
+#tw:hover{
+    font-size: 26px;
+    transition: 0.2s ease;
+}
 #tw:not(hover){
-    font-size: 17px;
+    font-size: 22px;
     transition: 0.2s ease;
 }
 
